@@ -1,0 +1,92 @@
+{
+  "roc_auc": 0.844927536231884,
+  "pr_auc": 0.6585164930417705,
+  "brier_score": 0.15935146134884567,
+  "classification_report": {
+    "0": {
+      "precision": 0.9055944055944056,
+      "recall": 0.7507246376811594,
+      "f1-score": 0.820919175911252,
+      "support": 1035.0
+    },
+    "1": {
+      "precision": 0.5317604355716878,
+      "recall": 0.7834224598930482,
+      "f1-score": 0.6335135135135135,
+      "support": 374.0
+    },
+    "accuracy": 0.759403832505323,
+    "macro avg": {
+      "precision": 0.7186774205830467,
+      "recall": 0.7670735487871038,
+      "f1-score": 0.7272163447123827,
+      "support": 1409.0
+    },
+    "weighted avg": {
+      "precision": 0.8063652325720518,
+      "recall": 0.759403832505323,
+      "f1-score": 0.7711748765948898,
+      "support": 1409.0
+    }
+  },
+  "cost_analysis": {
+    "optimal_cost_threshold": 0.29,
+    "minimized_total_cost": 59400.0,
+    "default_threshold_cost": 66300.0,
+    "cost_savings": 6900.0,
+    "optimal_f1_threshold": 0.5599999999999999,
+    "max_f1_score": 0.6370875995449374
+  },
+  "top_features": [
+    {
+      "Feature": "Contract",
+      "Importance_Mean": 0.10514557338086743,
+      "Importance_Std": 0.008795270766179489
+    },
+    {
+      "Feature": "TotalCharges",
+      "Importance_Mean": 0.04744348859438367,
+      "Importance_Std": 0.0040964229918323556
+    },
+    {
+      "Feature": "MonthlyCharges",
+      "Importance_Mean": 0.01760081634761934,
+      "Importance_Std": 0.005025258394866144
+    },
+    {
+      "Feature": "InternetService",
+      "Importance_Mean": 0.012980960500142014,
+      "Importance_Std": 0.0048146461034822875
+    },
+    {
+      "Feature": "tenure",
+      "Importance_Mean": 0.007143300007750053,
+      "Importance_Std": 0.0024985754816176054
+    },
+    {
+      "Feature": "OnlineSecurity",
+      "Importance_Mean": 0.005484254307783631,
+      "Importance_Std": 0.0007423779542692632
+    },
+    {
+      "Feature": "TechSupport",
+      "Importance_Mean": 0.005016921129453023,
+      "Importance_Std": 0.00203719620155973
+    },
+    {
+      "Feature": "PaymentMethod",
+      "Importance_Mean": 0.0017404221240538086,
+      "Importance_Std": 0.0019498954823093536
+    },
+    {
+      "Feature": "StreamingMovies",
+      "Importance_Mean": 0.0016246867653516351,
+      "Importance_Std": 0.0009737601221496744
+    },
+    {
+      "Feature": "MultipleLines",
+      "Importance_Mean": 0.0011508951406648427,
+      "Importance_Std": 0.000725888458122911
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "test_metrics": {
+    "test_roc_auc": 0.844927536231884,
+    "test_pr_auc": 0.6585164930417705,
+    "test_f1": 0.6335135135135135,
+    "test_recall": 0.7834224598930482,
+    "test_precision": 0.5317604355716878,
+    "test_accuracy": 0.759403832505323,
+    "test_brier_score": 0.15935146134884567
+  },
+  "cv_comparison": [
+    {
+      "Model": "Logistic Regression (Baseline)",
+      "ROC-AUC (Mean)": 0.8463129429341831,
+      "ROC-AUC (Std)": 0.011399992079852308,
+      "PR-AUC (Mean)": 0.6640699312027003,
+      "PR-AUC (Std)": 0.012934180252669087,
+      "F1 (Mean)": 0.6283927568848785,
+      "Recall (Mean)": 0.7979933110367894,
+      "Precision (Mean)": 0.5185568191104821,
+      "Accuracy (Mean)": 0.7497362494306549
+    },
+    {
+      "Model": "Gradient Boosting",
+      "ROC-AUC (Mean)": 0.8448976410531488,
+      "ROC-AUC (Std)": 0.009953230328802631,
+      "PR-AUC (Mean)": 0.6617451746052542,
+      "PR-AUC (Std)": 0.01421077715892745,
+      "F1 (Mean)": 0.5735430935165117,
+      "Recall (Mean)": 0.5117056856187291,
+      "Precision (Mean)": 0.6530155752178555,
+      "Accuracy (Mean)": 0.7981910193994965
+    },
+    {
+      "Model": "Random Forest",
+      "ROC-AUC (Mean)": 0.8434080144281454,
+      "ROC-AUC (Std)": 0.008909252719011551,
+      "PR-AUC (Mean)": 0.6532439444423973,
+      "PR-AUC (Std)": 0.01923835786900876,
+      "F1 (Mean)": 0.628848481493429,
+      "Recall (Mean)": 0.7531772575250837,
+      "Precision (Mean)": 0.5399145253807365,
+      "Accuracy (Mean)": 0.76411274371514
+    },
+    {
+      "Model": "AdaBoost",
+      "ROC-AUC (Mean)": 0.8413553441910544,
+      "ROC-AUC (Std)": 0.009492588398356289,
+      "PR-AUC (Mean)": 0.6396716214656506,
+      "PR-AUC (Std)": 0.009539498861298708,
+      "F1 (Mean)": 0.49830820792156577,
+      "Recall (Mean)": 0.3899665551839465,
+      "Precision (Mean)": 0.6910526479483675,
+      "Accuracy (Mean)": 0.7916234962592652
+    },
+    {
+      "Model": "HistGradientBoosting",
+      "ROC-AUC (Mean)": 0.8356524476233128,
+      "ROC-AUC (Std)": 0.008169403322244313,
+      "PR-AUC (Mean)": 0.6449450809033624,
+      "PR-AUC (Std)": 0.01697618919597192,
+      "F1 (Mean)": 0.619246954951406,
+      "Recall (Mean)": 0.7190635451505016,
+      "Precision (Mean)": 0.5440832564430587,
+      "Accuracy (Mean)": 0.7655321268209192
+    },
+    {
+      "Model": "Dummy (Majority Class)",
+      "ROC-AUC (Mean)": 0.5,
+      "ROC-AUC (Std)": 0.0,
+      "PR-AUC (Mean)": 0.2653532460941748,
+      "PR-AUC (Std)": 9.424729039040346e-05,
+      "F1 (Mean)": 0.0,
+      "Recall (Mean)": 0.0,
+      "Precision (Mean)": 0.0,
+      "Accuracy (Mean)": 0.7346467539058252
+    }
+  ],
+  "best_model_name": "HistGradientBoostingClassifier (Tuned)"
+}
