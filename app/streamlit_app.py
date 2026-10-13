@@ -3,8 +3,15 @@ Streamlit Web Dashboard for Customer Churn Prediction & Retention Analytics.
 Interactive UI for single predictions, batch CSV scoring, and model diagnostic visualization.
 """
 
-import json
+import sys
 from pathlib import Path
+import json
+
+# Ensure project root is in sys.path for Streamlit Cloud deployment
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
 import streamlit as st
 import pandas as pd
 import numpy as np
