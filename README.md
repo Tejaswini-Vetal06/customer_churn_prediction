@@ -164,3 +164,6 @@ Explore:
 ```
 All 12 unit and integration tests validate data integrity, leak-free preprocessing, predictor outputs, and FastAPI schemas.
 
+###### DEPLOYED WEB LINK  
+https://customerchurnprediction-qg2c8mpy3tyawgtun4itnq.streamlit.app/
+
