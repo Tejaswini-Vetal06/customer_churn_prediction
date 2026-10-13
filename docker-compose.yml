@@ -1,0 +1,26 @@
+services:
+  # 1. FastAPI Inference Microservice
+  churn-api:
+    build: .
+    container_name: churn_prediction_api
+    ports:
+      - "8000:8000"
+    command: uvicorn api.app:app --host 0.0.0.0 --port 8000
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # 2. Streamlit Web Dashboard
+  churn-ui:
+    build: .
+    container_name: churn_prediction_dashboard
+    ports:
+      - "8501:8501"
+    command: streamlit run app/streamlit_app.py --server.port 8501 --server.address 0.0.0.0
+    restart: unless-stopped
+    depends_on:
+      - churn-api
+
